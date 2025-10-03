@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home — Will Roepsch Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="nav">
+  <div class="inner">
+    <div class="brand">
+      <div class="logo">WR</div>
+      <h1>Will Roepsch — Engineering Portfolio</h1>
+    </div>
+    <button class="button secondary mobile-toggle">Menu</button>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="career.html">Career Objective</a>
+      <a href="projects.html">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="reflections.html">Reflections</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</div>
+
+
+<section class="hero">
+  <div class="container">
+    <span class="badge">Welcome</span>
+    <h2>Hi, I’m <strong>Will Roepsch</strong> — Computer Engineering student at Iowa State University.</h2>
+    <p>This site highlights my Senior Design work, additional projects, technical experience, and reflections on engineering ethics and growth.</p>
+    <div class="section">
+      <a class="button" href="projects.html">Explore Projects</a>
+      <a class="button secondary" href="resume.html" style="margin-left:10px">Résumé (PDF)</a>
+    </div>
+  </div>
+</section>
+<section class="container section">
+  <div class="grid">
+    <div class="card">
+      <h3>What you’ll find</h3>
+      <ul class="check">
+        <li>Career Objective (narrative)</li>
+        <li>Senior Design + 3+ additional projects</li>
+        <li>Internship/Co-op experience and skills learned</li>
+        <li>General Education & Cumulative Reflections</li>
+        <li>Ethics paper summary</li>
+        <li>Résumé download</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>About me</h3>
+      <p>I love building systems end‑to‑end—from embedded C and multithreaded servers to Android apps and full‑stack web dashboards. I value clear communication, ethical design, and dependable engineering.</p>
+    </div>
+    <div class="card">
+      <h3>Contact</h3>
+      <p><strong>Email:</strong> <a href="mailto:your.name@iastate.edu">your.name@iastate.edu</a></p>
+      <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/willroepsch</a></p>
+      <p><strong>GitHub:</strong> <a href="#">github.com/willroepsch</a></p>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div>© <span id="year"></span> Will Roepsch — Computer Engineering @ Iowa State University</div>
+    <div class="small">This portfolio follows the course checklist (welcome page, career objective, Senior Design + 3 projects, experience, reflections, ethics, and résumé).</div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="script.js"></script>
+
+</body>
+</html>

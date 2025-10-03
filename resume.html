@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Résumé — Will Roepsch</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="nav">
+  <div class="inner">
+    <div class="brand">
+      <div class="logo">WR</div>
+      <h1>Will Roepsch — Engineering Portfolio</h1>
+    </div>
+    <button class="button secondary mobile-toggle">Menu</button>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="career.html">Career Objective</a>
+      <a href="projects.html">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="reflections.html">Reflections</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</div>
+
+
+<section class="container section">
+  <span class="badge">Résumé</span>
+  <h2>Download</h2>
+  <p>Place your latest PDF in the <code>assets/</code> folder as <code>Will-Roepsch-Resume.pdf</code> and keep the filename stable for your instructor.</p>
+  <p><a class="button" href="assets/Will-Roepsch-Resume.pdf">Download Résumé (PDF)</a></p>
+  <p class="small">Includes research/papers, awards, and activities.</p>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div>© <span id="year"></span> Will Roepsch — Computer Engineering @ Iowa State University</div>
+    <div class="small">This portfolio follows the course checklist (welcome page, career objective, Senior Design + 3 projects, experience, reflections, ethics, and résumé).</div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="script.js"></script>
+
+</body>
+</html>

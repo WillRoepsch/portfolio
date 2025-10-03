@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reflections — Will Roepsch</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="nav">
+  <div class="inner">
+    <div class="brand">
+      <div class="logo">WR</div>
+      <h1>Will Roepsch — Engineering Portfolio</h1>
+    </div>
+    <button class="button secondary mobile-toggle">Menu</button>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="career.html">Career Objective</a>
+      <a href="projects.html">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="reflections.html">Reflections</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</div>
+
+
+<section class="container section">
+  <span class="badge">Reflections</span>
+
+  <h2>General Education Reflection</h2>
+  <p>Across humanities, social sciences, and technical electives, I learned how context shapes engineering choices. Courses in communication and culture improved how I write specs and present trade‑offs, while statistics courses sharpened my ability to reason about uncertainty and measurement error.</p>
+
+  <h2 class="section">Cumulative Reflection</h2>
+  <p>My engineering path has been about turning ideas into reliable systems. Android and web projects taught me to define clear APIs and keep state predictable. Systems labs in C taught me to respect concurrency and test edge cases early. Group projects reinforced that communication avoids hours of debugging later. I now approach problems with small testable slices, observability, and an eye toward maintainability and ethics.</p>
+
+  <h2 class="section">Ethics Paper (CPRE/EE 394)</h2>
+  <p><strong>Abstract:</strong> This paper evaluates the privacy implications of location tracking apps in education and family contexts. It compares opt‑in consent flows, data minimization strategies, and retention policies, arguing for on‑device processing and transparent controls to reduce risk while preserving utility.</p>
+  <p><a class="button secondary" href="assets/ethics-paper.pdf">Download full paper (PDF)</a></p>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div>© <span id="year"></span> Will Roepsch — Computer Engineering @ Iowa State University</div>
+    <div class="small">This portfolio follows the course checklist (welcome page, career objective, Senior Design + 3 projects, experience, reflections, ethics, and résumé).</div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="script.js"></script>
+
+</body>
+</html>

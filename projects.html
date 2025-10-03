@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — Will Roepsch</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="nav">
+  <div class="inner">
+    <div class="brand">
+      <div class="logo">WR</div>
+      <h1>Will Roepsch — Engineering Portfolio</h1>
+    </div>
+    <button class="button secondary mobile-toggle">Menu</button>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="career.html">Career Objective</a>
+      <a href="projects.html">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="reflections.html">Reflections</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</div>
+
+
+<section class="container section">
+  <span class="badge">Projects</span>
+  <h2>Senior Design + Additional Projects</h2>
+  <p class="small">Each entry outlines the problem, my role, skills gained, resources, and links.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Senior Design — Connected Safety & Maps Platform (in progress)</h3>
+      <p><strong>Description:</strong> A privacy‑aware location sharing and zone‑based notification system with Android client and backend APIs. Features geofences, group visibility, and real‑time WebSocket updates.</p>
+      <p><strong>My Role:</strong> Android lead. Implemented Mapbox integration, geofence creation, a broadcast receiver for enter/exit events, and a friends/group system with REST/WebSockets.</p>
+      <p><strong>Skills & Knowledge Gained:</strong> Android (Fragments, RecyclerView), Mapbox SDK, Geofencing APIs, Firebase Auth, REST + WebSocket backends, push notifications, UI/UX with Tailwind‑inspired components.</p>
+      <p><strong>Links:</strong> <a href="#">Android repo</a> • <a href="#">Backend repo</a> • <a href="#">Demo video</a></p>
+    </div>
+
+    <div class="card">
+      <h3>Android Geofencing & Friends App</h3>
+      <p><strong>Description:</strong> Life360‑style app that displays friend locations, supports groups, and triggers notifications on zone enter/exit with animations and avatar styling.</p>
+      <p><strong>My Role:</strong> Implemented geofence creation UI (AddZoneBottomSheet), GeofenceBroadcastReceiver, avatar styling/animations, and REST endpoints for friends & groups.</p>
+      <p><strong>Skills & Knowledge Gained:</strong> Kotlin/Java, Android Notifications, SharedPreferences profile system, Espresso UI tests.</p>
+      <p><strong>Resources Used:</strong> Mapbox docs, Android Geofencing API guides, Firebase Auth.</p>
+      <p><strong>Links:</strong> <a href="#">Client repo</a></p>
+    </div>
+
+    <div class="card">
+      <h3>Crypto Trading Dashboard (Flask + Web)</h3>
+      <p><strong>Description:</strong> A real‑time candlestick dashboard with sentiment overlay, Binance Testnet trading, manual buy/sell, multi‑coin comparison, and dark UI.</p>
+      <p><strong>My Role:</strong> Full‑stack dev. Built Flask backend, WebSocket price streaming, Chart.js front‑end with interval buttons, and trade controls.</p>
+      <p><strong>Skills & Knowledge Gained:</strong> Python/Flask, WebSockets, Chart.js, frontend state, exchange APIs, UI design.</p>
+      <p><strong>Resources Used:</strong> Binance Testnet API, Hugging Face sentiment model.</p>
+      <p><strong>Links:</strong> <a href="#">Repo</a></p>
+    </div>
+
+    <div class="card">
+      <h3>AI Choose‑Your‑Own‑Adventure (React + Node + Astra DB)</h3>
+      <p><strong>Description:</strong> An anime‑style interactive story with AI‑generated scenes, persistent character memory (mood/trust/inventory), and RAG‑assisted context.</p>
+      <p><strong>My Role:</strong> Frontend + backend integration. Tailwind UI redesign, character config system, OpenRouter API integration, Firebase login, Astra DB for state.</p>
+      <p><strong>Skills & Knowledge Gained:</strong> React + Tailwind, Node/Express, vector stores, prompt design, persistent state, image generation pipelines.</p>
+      <p><strong>Resources Used:</strong> OpenRouter, Replicate image models, Astra DB.</p>
+      <p><strong>Links:</strong> <a href="#">Client repo</a> • <a href="#">Server repo</a></p>
+    </div>
+
+    <div class="card">
+      <h3>Iowa Roadmap — React Mapping App (COM S 319)</h3>
+      <p><strong>Description:</strong> Tourist map of Iowa with trip builder: add places, visualize routes, and export a summary. Navbar with region tabs and barn logo branding.</p>
+      <p><strong>My Role:</strong> Frontend engineer. Implemented trip flow (Shop → MapRoute → Summary), Mapbox route display, and JSON data loaders.</p>
+      <p><strong>Skills & Knowledge Gained:</strong> React, routing, state mgmt, Mapbox GL JS.</p>
+      <p><strong>Resources Used:</strong> Mapbox docs, sample datasets.</p>
+      <p><strong>Links:</strong> <a href="#">Repo</a></p>
+    </div>
+
+    <div class="card">
+      <h3>Multithreaded Bank Server (C, CprE 308)</h3>
+      <p><strong>Description:</strong> Concurrent transaction simulator with 1‑indexed client IDs mapped to 0‑indexed internal arrays. Supports deposits, withdrawals, and transfers with synchronization.</p>
+      <p><strong>My Role:</strong> Implemented thread pool, mutex/cond control, and input parser; wrote tests and perf measurements.</p>
+      <p><strong>Skills & Knowledge Gained:</strong> C, POSIX threads, race condition avoidance, profiling.</p>
+      <p><strong>Links:</strong> <a href="#">Repo</a></p>
+    </div>
+
+    <div class="card">
+      <h3>FAT‑12 Filesystem Tools (C)</h3>
+      <p><strong>Description:</strong> Utilities for decoding FAT‑12 images: boot sector dump, directory listings, and bytedump visualization.</p>
+      <p><strong>My Role:</strong> Implemented parsers and CLI tools for lab workflows.</p>
+      <p><strong>Skills & Knowledge Gained:</strong> Binary parsing, struct packing, endianness, filesystem layouts.</p>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div>© <span id="year"></span> Will Roepsch — Computer Engineering @ Iowa State University</div>
+    <div class="small">This portfolio follows the course checklist (welcome page, career objective, Senior Design + 3 projects, experience, reflections, ethics, and résumé).</div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="script.js"></script>
+
+</body>
+</html>
