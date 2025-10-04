@@ -8,6 +8,7 @@
 </head>
 <body>
 
+<!-- Top nav (unchanged) -->
 <div class="nav">
   <div class="inner">
     <div class="brand">
@@ -27,74 +28,64 @@
   </div>
 </div>
 
-
 <section class="container section">
   <span class="badge">Projects</span>
   <h2>Senior Design + Additional Projects</h2>
-  <p class="small">Each entry outlines the problem, my role, skills gained, resources, and links.</p>
+  <p class="small">
+    Each entry includes the problem, my role, skills gained, resources, and links. Project list aligned with my resume. :contentReference[oaicite:0]{index=0}
+  </p>
 
   <div class="grid">
+    <!-- Senior Design -->
     <div class="card">
-      <h3>Senior Design — Connected Safety & Maps Platform (in progress)</h3>
-      <p><strong>Description:</strong> A privacy‑aware location sharing and zone‑based notification system with Android client and backend APIs. Features geofences, group visibility, and real‑time WebSocket updates.</p>
-      <p><strong>My Role:</strong> Android lead. Implemented Mapbox integration, geofence creation, a broadcast receiver for enter/exit events, and a friends/group system with REST/WebSockets.</p>
-      <p><strong>Skills & Knowledge Gained:</strong> Android (Fragments, RecyclerView), Mapbox SDK, Geofencing APIs, Firebase Auth, REST + WebSocket backends, push notifications, UI/UX with Tailwind‑inspired components.</p>
-      <p><strong>Links:</strong> <a href="#">Android repo</a> • <a href="#">Backend repo</a> • <a href="#">Demo video</a></p>
+      <h3>Senior Design — True Force Technology</h3>
+      <p><strong>Description:</strong> Capstone team project with True Force Technology. We’re building production-grade software/hardware components to specifications provided by the sponsor, with a focus on reliability, integration discipline, and measurable outcomes.</p>
+      <p><strong>My Role:</strong> Core developer and integrator. I contribute to feature implementation, testing plans, and cross-component interfaces, and I help drive team documentation and demos.</p>
+      <p><strong>Skills & Knowledge Gained:</strong> Agile teamwork, requirements → implementation traceability, CI/CD hygiene, integration testing, stakeholder reviews.</p>
+      <p><strong>Links:</strong> <a href="https://sdmay26-39.sd.ece.iastate.edu/" target="_blank" rel="noopener">Team website</a></p>
     </div>
 
+    <!-- Project 1 -->
     <div class="card">
-      <h3>Android Geofencing & Friends App</h3>
-      <p><strong>Description:</strong> Life360‑style app that displays friend locations, supports groups, and triggers notifications on zone enter/exit with animations and avatar styling.</p>
-      <p><strong>My Role:</strong> Implemented geofence creation UI (AddZoneBottomSheet), GeofenceBroadcastReceiver, avatar styling/animations, and REST endpoints for friends & groups.</p>
-      <p><strong>Skills & Knowledge Gained:</strong> Kotlin/Java, Android Notifications, SharedPreferences profile system, Espresso UI tests.</p>
-      <p><strong>Resources Used:</strong> Mapbox docs, Android Geofencing API guides, Firebase Auth.</p>
-      <p><strong>Links:</strong> <a href="#">Client repo</a></p>
+      <h3>Hardware & Software Design of a Pipelined MIPS Processor (2024)</h3>
+      <p><strong>Description:</strong> Implemented a 5-stage pipelined MIPS CPU with datapath, ALU integration, and hazard avoidance (forwarding & stalling).</p>
+      <p><strong>My Role:</strong> Designed/verified datapath modules and wrote C/MIPS test programs to validate control and hazards.</p>
+      <p><strong>Skills & Knowledge Gained:</strong> VHDL, MIPS assembly, testbenching, timing & hazards, ModelSim/Questa, computer architecture.</p>
+      <p><strong>Resources Used:</strong> Course lab specs, reference ISA docs, ModelSim.</p>
+      <!-- <p><strong>Links:</strong> <a href="#">Repo (add link)</a></p> -->
     </div>
 
+    <!-- Project 2 -->
     <div class="card">
-      <h3>Crypto Trading Dashboard (Flask + Web)</h3>
-      <p><strong>Description:</strong> A real‑time candlestick dashboard with sentiment overlay, Binance Testnet trading, manual buy/sell, multi‑coin comparison, and dark UI.</p>
-      <p><strong>My Role:</strong> Full‑stack dev. Built Flask backend, WebSocket price streaming, Chart.js front‑end with interval buttons, and trade controls.</p>
-      <p><strong>Skills & Knowledge Gained:</strong> Python/Flask, WebSockets, Chart.js, frontend state, exchange APIs, UI design.</p>
-      <p><strong>Resources Used:</strong> Binance Testnet API, Hugging Face sentiment model.</p>
-      <p><strong>Links:</strong> <a href="#">Repo</a></p>
+      <h3>Embedded Systems Mars Rover (2024)</h3>
+      <p><strong>Description:</strong> Modified a Roomba-style platform to support remote control and obstacle detection using IR, sonar, and bump sensors.</p>
+      <p><strong>My Role:</strong> Brought up sensor stack and motor control loop; built a simple teleop UI; tuned thresholds for reliable obstacle avoidance.</p>
+      <p><strong>Skills & Knowledge Gained:</strong> C on ARM, embedded drivers, sensor fusion basics, PWM/motor control, serial comms.</p>
+      <p><strong>Resources Used:</strong> MCU/board datasheets, sensor application notes.</p>
+      <!-- <p><strong>Links:</strong> <a href="#">Repo (add link)</a> • <a href="#">Demo video (optional)</a></p> -->
     </div>
 
+    <!-- Project 3 -->
     <div class="card">
-      <h3>AI Choose‑Your‑Own‑Adventure (React + Node + Astra DB)</h3>
-      <p><strong>Description:</strong> An anime‑style interactive story with AI‑generated scenes, persistent character memory (mood/trust/inventory), and RAG‑assisted context.</p>
-      <p><strong>My Role:</strong> Frontend + backend integration. Tailwind UI redesign, character config system, OpenRouter API integration, Firebase login, Astra DB for state.</p>
-      <p><strong>Skills & Knowledge Gained:</strong> React + Tailwind, Node/Express, vector stores, prompt design, persistent state, image generation pipelines.</p>
-      <p><strong>Resources Used:</strong> OpenRouter, Replicate image models, Astra DB.</p>
-      <p><strong>Links:</strong> <a href="#">Client repo</a> • <a href="#">Server repo</a></p>
+      <h3>Personal Server / Homelab (2024)</h3>
+      <p><strong>Description:</strong> Designed a remote server setup for secure peer-to-peer access to services and data. Automated media/workflows and exposed UIs safely.</p>
+      <p><strong>My Role:</strong> Provisioned Docker/Portainer stacks, configured Tailscale & Cloudflare for access, and documented the topology.</p>
+      <p><strong>Skills & Knowledge Gained:</strong> Linux administration, Docker/Compose, reverse proxies/Tunnels, VPNs, basic observability.</p>
+      <p><strong>Resources Used:</strong> Docker docs, Tailscale & Cloudflare guides.</p>
+      <!-- <p><strong>Links:</strong> <a href="#">Infra repo / compose files (optional)</a></p> -->
     </div>
 
+    <!-- Project 4 -->
     <div class="card">
-      <h3>Iowa Roadmap — React Mapping App (COM S 319)</h3>
-      <p><strong>Description:</strong> Tourist map of Iowa with trip builder: add places, visualize routes, and export a summary. Navbar with region tabs and barn logo branding.</p>
-      <p><strong>My Role:</strong> Frontend engineer. Implemented trip flow (Shop → MapRoute → Summary), Mapbox route display, and JSON data loaders.</p>
-      <p><strong>Skills & Knowledge Gained:</strong> React, routing, state mgmt, Mapbox GL JS.</p>
-      <p><strong>Resources Used:</strong> Mapbox docs, sample datasets.</p>
-      <p><strong>Links:</strong> <a href="#">Repo</a></p>
-    </div>
-
-    <div class="card">
-      <h3>Multithreaded Bank Server (C, CprE 308)</h3>
-      <p><strong>Description:</strong> Concurrent transaction simulator with 1‑indexed client IDs mapped to 0‑indexed internal arrays. Supports deposits, withdrawals, and transfers with synchronization.</p>
-      <p><strong>My Role:</strong> Implemented thread pool, mutex/cond control, and input parser; wrote tests and perf measurements.</p>
-      <p><strong>Skills & Knowledge Gained:</strong> C, POSIX threads, race condition avoidance, profiling.</p>
-      <p><strong>Links:</strong> <a href="#">Repo</a></p>
-    </div>
-
-    <div class="card">
-      <h3>FAT‑12 Filesystem Tools (C)</h3>
-      <p><strong>Description:</strong> Utilities for decoding FAT‑12 images: boot sector dump, directory listings, and bytedump visualization.</p>
-      <p><strong>My Role:</strong> Implemented parsers and CLI tools for lab workflows.</p>
-      <p><strong>Skills & Knowledge Gained:</strong> Binary parsing, struct packing, endianness, filesystem layouts.</p>
+      <h3>Archived Message Reconstruction (2023)</h3>
+      <p><strong>Description:</strong> Implemented BST-based encoding/decoding to reconstruct messages and images for secure transmission exercises.</p>
+      <p><strong>My Role:</strong> Built Java implementation, wrote unit tests, and profiled tree operations under varied inputs.</p>
+      <p><strong>Skills & Knowledge Gained:</strong> Java, algorithmic data structures, JUnit testing, performance profiling.</p>
+      <p><strong>Resources Used:</strong> Course spec, CS algorithms references.</p>
+      <!-- <p><strong>Links:</strong> <a href="#">Repo (add link)</a></p> -->
     </div>
   </div>
 </section>
-
 
 <footer>
   <div class="container">
@@ -104,6 +95,5 @@
 </footer>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 <script src="script.js"></script>
-
 </body>
 </html>
